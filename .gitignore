@@ -1,0 +1,5 @@
+VSMCsinglecell
+src/*.o
+doc/html
+doc/latex
+
