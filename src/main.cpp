@@ -136,13 +136,13 @@ int main(int argc, char* argv[]){
 			fsrca = fopen(temp_name,"w+");
 			sprintf(temp_name,"%s/I_SRleak.txt",sub_folder);
 			fsrleak = fopen(temp_name,"w+");
-			sprintf(temp_name,"%s/flux_CACC.txt",sub_folder);
+			sprintf(temp_name,"%s/I_CACC.txt",sub_folder);
 			fcacc = fopen(temp_name,"w+");
-			sprintf(temp_name,"%s/flux_NSC.txt",sub_folder);
+			sprintf(temp_name,"%s/I_NSC.txt",sub_folder);
 			fnsc = fopen(temp_name,"w+");
-			sprintf(temp_name,"%s/flux_NCX.txt",sub_folder);
+			sprintf(temp_name,"%s/I_NCX.txt",sub_folder);
 			fncx = fopen(temp_name,"w+");
-			sprintf(temp_name,"%s/flux_RyR.txt",sub_folder);
+			sprintf(temp_name,"%s/I_RyR.txt",sub_folder);
 			fryr = fopen(temp_name,"w+");
 
 
