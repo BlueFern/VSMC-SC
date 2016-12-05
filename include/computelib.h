@@ -32,7 +32,6 @@ double *Q_ip3r; ///< Maximum rate of ip3r channel
 double *Q_serca; ///< Maximum rate of serca pump
 double *Q_ryr; ///< Maximum rate of ryr channel
 
-void paraconst(FILE *fparaconst, double tfinal, double interval, double file_write_freq, double delay, double stim_time, double tol_state); // Writes "paraconst.txt" file contains simulation parameters and constants
 void initialize(); ///< This function initializes the variables
 void allocatememory(int var_tot, int par_tot); ///< This function allocates memory for all the variables defined above
 void file_names(char sub_folder, char timeseries_folder); ///< Creating FILE names of the output files
