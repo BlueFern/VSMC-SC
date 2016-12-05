@@ -22,9 +22,9 @@
 int main(int argc, char* argv[]){
 
 	/* Sigmoidal function */
-		double L_max = 351; // Maimum agonist concentration, nM
+		double L_max = 301; // Maimum agonist concentration, nM
 		double L_incre = 50; // increment of agonist concentration, nM
-		double L_ini = 350.0; // initial agonist concentration, nM
+		double L_ini = 300.0; // initial agonist concentration, nM
 		double L_var = L_ini; // Agonist concentration, nM
 
 	/* Simulation controlling parameters */
@@ -74,9 +74,6 @@ int main(int argc, char* argv[]){
 				return -1;
 				}
 
-						FILE *fparaconst; ///< Simulation parameters and constants file
-						sprintf(temp_name,"%s/paraconst.txt",main_folder);
-						fparaconst = fopen(temp_name,"w+");
 
 	/* Loop to continue the simulation for the range of agonist concentration from L_ini to L_max   */
 		while ( L_var < L_max)
@@ -147,9 +144,6 @@ int main(int argc, char* argv[]){
 
 
 			initialize(); // Initialize the variables
-			// Printing "paraconst.txt" file
-			paraconst(fparaconst, tfinal,interval, file_write_freq, delay, stim_time, tol_state);
-			fclose(fparaconst);
 			dump_data(ft, fvm, fca, fpmca, fsrleak, fip3, fserca, fncx, fvocc, fbkca, fip3r, fcacc, fnsc , fsrca, fryr,fdag, tnow); // Creating output files
 
 			// Simulation starts here
