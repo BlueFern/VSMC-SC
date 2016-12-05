@@ -57,7 +57,7 @@ const double   	G_cacc	= 	0.112 * C_m; ///< Whole cell conductance of CACC, nS
 const double   	n_cacc	= 	2; ///< order of the function shows depenedncy on intracellular calcium
 const double   	k_cacc	= 	587; ///< Dissociation constant of CACC, nM
 
-const double    G_ncx	= 	0.25e-3;///< Whole cell conductance of NCX channel, pS
+const double    G_ncx	= 	0.25e-3;///< Scaling factor of NCX channel, pA
 const double   	d_ncx	= 	0.0003;
 const double  	gamma_ncx	= 	0.45; ///< Position of the energy barrier of NCX channel
 const double  	k_ncx	= 	125; ///< Dissociation constant for allosteric component, nM
