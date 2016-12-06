@@ -7,7 +7,7 @@ This model solves intracellular calcium dynamics in vascular smooth muscle cell 
 How to Compile
 --------------
 
-make -f makefile
+make
 
 It will create run file and all the doxygen files. The doxygen files are stored in "doc" folder.
 
