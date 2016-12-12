@@ -15,8 +15,8 @@
 #define P3(x) ((x)*(x)*(x))
 
 
-double *par; ///< par - model parameters in macros file
-double *y; ///< y - model state variables in macros file
+double *par; ///< par - model parameters
+double *y; ///< y - model state variables
 double *y_temp; ///< y_temp - temporary storage of y
 double *y_converge; ///< y_converge - temporary storage of converged results
 
@@ -32,7 +32,7 @@ double *Q_ip3r; ///< Maximum rate of ip3r channel
 double *Q_serca; ///< Maximum rate of serca pump
 double *Q_ryr; ///< Maximum rate of ryr channel
 
-void initialize(); ///< This function initializes the variables
+void initialize(); ///< This function initializes the model variables and parameters
 void allocatememory(int var_tot, int par_tot); ///< This function allocates memory for all the variables defined above
 void file_names(char sub_folder, char timeseries_folder); ///< Creating FILE names of the output files
 void singlecell(double tnow, double interval); ///< This function solves single cell dynamics
