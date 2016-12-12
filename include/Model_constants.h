@@ -3,8 +3,7 @@
  * @brief Model Constants:
  * Contains Standard VSMC Parameters,  Initial values of state variables,
  * Parameters for Membrane Channels, Pumps and exchangers, Parameters for Sarcoplasmic Reticulum channels and pumps
- * Parameters for Calcium buffering in cytosol, Parameters for alpha-adrenoceptor cascade, IP3 and DAG formation and
- * Boundary values of agonist concentration in the sigmoidal disribution */
+ * Parameters for Calcium buffering in cytosol, Parameters for alpha-adrenoceptor cascade, IP3 and DAG formation and */
 
 /* Standard VSMC Parameters */
 
