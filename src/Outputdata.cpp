@@ -24,16 +24,16 @@ void dump_data(FILE *ft, FILE *fvm, FILE *fca,FILE *fpmca, FILE *fsrleak, FILE *
 			fprintf(fip3,"%f\t",y[i * num_var[0] + smc_ip3]);
 			fprintf(fdag,"%f\t",y[i * num_var[0] + smc_DAG]);
 			fprintf(fsrca,"%f\t",y[i * num_var[0] + smc_SR_ca]);
-			fprintf(fncx,"%f\t",par[i * num_par[0] + I_ncx]*1e3);
-			fprintf(fvocc,"%f\t",par[i * num_par[0] + I_vocc]*1e3);
-			fprintf(fcacc,"%f\t",par[i * num_par[0] + I_cacc]*1e3);
-			fprintf(fnsc,"%f\t",par[i * num_par[0] + I_nsc]*1e3);
-			fprintf(fbkca,"%f\t",par[i * num_par[0] + I_bkca]*1e3);
-			fprintf(fpmca,"%f\t",par[i * num_par[0] + I_pmca]*1e3);
-			fprintf(fserca,"%f\t",par[i * num_par[0] + I_serca]*1e3);
-			fprintf(fip3r,"%f\t",par[i * num_par[0] + I_ip3r]*1e3);
-			fprintf(fryr,"%f\t",par[i * num_par[0] + I_ryr]*1e3);
-			fprintf(fsrleak,"%f\t",par[i * num_par[0] + I_srleak]*1e3);
+			fprintf(fncx,"%f\t",par[i * num_par[0] + I_ncx]*1e3); // pA * 1e3
+			fprintf(fvocc,"%f\t",par[i * num_par[0] + I_vocc]*1e3); // pA * 1e3
+			fprintf(fcacc,"%f\t",par[i * num_par[0] + I_cacc]*1e3); // pA * 1e3
+			fprintf(fnsc,"%f\t",par[i * num_par[0] + I_nsc]*1e3); // pA * 1e3
+			fprintf(fbkca,"%f\t",par[i * num_par[0] + I_bkca]*1e3); // pA * 1e3
+			fprintf(fpmca,"%f\t",par[i * num_par[0] + I_pmca]*1e3); // pA * 1e3
+			fprintf(fserca,"%f\t",par[i * num_par[0] + I_serca]*1e3); // pA * 1e3
+			fprintf(fip3r,"%f\t",par[i * num_par[0] + I_ip3r]*1e3); // pA * 1e3
+			fprintf(fryr,"%f\t",par[i * num_par[0] + I_ryr]*1e3); // pA * 1e3
+			fprintf(fsrleak,"%f\t",par[i * num_par[0] + I_srleak]*1e3); // pA * 1e3
 	}
 
 		fprintf(fvm,"\n");
