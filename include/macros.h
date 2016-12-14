@@ -5,7 +5,7 @@
  * \brief This file contains macros required for the state variables and model parameters
  */
 
-/* State variables */
+/* State variables in y*/
 
 #define    		smc_vm			0 ///< Membrane potential
 #define    		smc_ca			1 ///< Intracellular calcium
@@ -26,7 +26,7 @@
 #define			smc_R00			16 ///< R00 state in RyR model
 #define			smc_G			17 ///< G-protein concentration
 
-/* Model parameters */
+/* Model parameters in par */
 
 #define			rhocell		0 ///< Buffering parameter
 #define			E_K			1 ///< Nernst potential of potassium
