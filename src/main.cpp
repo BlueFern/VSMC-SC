@@ -21,7 +21,7 @@
 
 int main(int argc, char* argv[]){
 
-	/* Sigmoidal function */
+	/* Agonist concentration */
 		double L_max = 301; // Maimum agonist concentration, nM
 		double L_incre = 50; // increment of agonist concentration, nM
 		double L_ini = 300.0; // initial agonist concentration, nM
@@ -62,7 +62,7 @@ int main(int argc, char* argv[]){
 
 	 	allocatememory(var_tot, par_tot); // Allocating memory
 
-		L_rest[0] = L_ini; // initial agonist concentration- before assigning sigmoidal distribution
+		L_rest[0] = 0; // initial agonist concentration for the first 'delay' seconds
 
 
 		/* Creating main folder */
